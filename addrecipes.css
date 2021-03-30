@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+@import url('https://fonts.googleapis.com/css?family=Montaga&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+header nav ul li a, header nav ul li a  button,main .grid .item1 h2 a{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+} 
+
+header{
+    width: 100%;
+    height: 500px;
+}
+header::after {
+    content: "";
+    background-image: url("headerbg.png");
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    width: 100%;
+    height: 80%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black ;
+  }
+nav{
+    color: black;
+    background-color: white;
+    height: 70px ;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    top: 0;
+    position: fixed;
+    z-index: 1;
+    box-shadow: 10px 10px 5px grey;
+ 
+}
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.nav__links{
+    list-style: none;
+}
+.nav__links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+.nav__links li a:hover{
+    color: #0088a9;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+header nav ul li a button, .grid1 div button, div button{
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgb(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+ button:hover{
+     background-color: rgb(0, 136, 169, 0.5);
+ }
+ .logo:hover{
+     opacity: 0.5;
+     width: 60px;
+     height: 60px;
+ }
+ .f1{
+     text-align: center;
+     font-size: 50px;
+ }
+ .form-group{
+        margin-bottom: 1rem;
+  
+ }
+ .form-control {
+     padding-left: 20px;
+    display: block;
+    width: 80%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+
+ .container{ 
+     margin-left: 25%;
+    text-align: center;
+    display: grid;
+    color:#000;
+    margin-top: 200px;
+    width: 50%;
+    font-size: 20px;
+    text-align: center; 
+    font-family: "Montserrat", sans-serif;
+    background-color: white;
+    z-index: 1;
+    
+ }
+main{
+    padding-top: (-50px);
+    margin-bottom: 100px;
+    background-color: thistle;
+}
+.gr{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    width: 80%;
+    margin-left: 10%;
+    height: 410px;
+    box-shadow: darkslategray;
+    background-color: thistle;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+ }
+ .gr div{
+    font-family: 'Montaga', serif;;
+     font-size: 20px;
+     text-align: center;
+    align-items: center;
+    text-align: left;
+    padding:5px;
+    } 
+.grid{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+    width: 60%;
+    height: 130px;
+    box-shadow: darkslategray;
+    background-color: wheat;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    margin-left: 20%;
+ }
+ 
+  .grid div{
+    font-family: 'Montaga', serif;;
+     font-size: 20px;
+     text-align: center;
+    align-items: center;
+    text-align: left;
+    }  
+.grid div a{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    color: black;
+    text-decoration: none;
+}
+ .myslides{
+     display: none;
+     background-color: thistle;
+ }
+ .myslides .fade img{
+     padding-top: 20px;
+     vertical-align: middle;
+     background-color: thistle;
+ }
+ .slideshow-container {
+     padding-top: 20px;
+    background-color: thistle;
+    height: 350px;
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    opacity: 0;
+  }
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    opacity: 1;
+  }
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  .cl1{
+      height: 500px;
+      background-color: thistle;
+      margin-top: 10px;
+  }
+  .grid1{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 10px;
+    width: 100%;
+    height: 600px;
+    box-shadow: darkslategray;
+    background-color: wheat;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+
+ }
+ .f2{
+    margin-left: 20%;
+    margin-top: 5px;
+    color: #000;
+ }
+ .f2 a{
+     color: white;
+ }
+ form{
+     margin-left: 30%;
+ }
+ form table tr th button{
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgb(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+ }
+ .grid1 div{
+    background-color: wheat;
+    font-family: 'Montaga', serif;;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    font-weight: 500;
+    color: black;
+    } 
+.grid1 div img{
+    margin-left: 20px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+.grid1 div p{
+    background-color: wheat;
+}
+footer{
+    height: 400px;
+    background: #303036;
+    position: relative;
+}
+footer .footer1{
+    height:350px;
+    display: flex;
+    color: wheat;
+    font-family: 'Montaga', serif;
+}
+footer .footer1 .footer-section{
+    flex: 1;
+    padding: 25px;
+    background: #303036;
+}
+footer .footer1 .footer-section li, footer .footer1 .footer-section a,  button{
+    color: wheat;
+}
+
+footer .footer1 .about .socials a{
+    border: 1px solid darkslategrey;
+    width: 45px;
+    height: 41px;
+    padding-top: 5px;
+    margin-right: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.3em;
+    border-radius: 5px;
+    transition: all .3s;
+}
+footer .footer1 .about .socials a:hover{
+    border: 1px solid white;
+    color: white;
+    transition: all .3s;
+}
+footer .footer1 .links{
+    margin-left: 200px;
+}
+footer .footer1 .links ul a{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: all .3s;
+}
+footer .footer1 .links ul a:hover{
+    font-size: 1.3em;
+    margin-left: 15px;
+    color: white;
+    transition: all .3s;
+}
+footer .footer1 .contact .contact-input{
+    background-color: #272727;
+    color: #bebdbd;
+    margin-bottom: 10px;
+    line-height: 1.5rem;
+    padding: .9rem 1.4rem;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+
+} 
+footer .footer1 .contact .contact-input:focus{
+    background-color: #1a1a1a;
+}
+.btn{
+    padding: .5rem 1rem;
+    background-color: #006669;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+.btn:hover{
+    color: white !important;
+    background-color: #005255 ;
+}
+.btn-big{
+    padding: .7rem 1rem;
+    line-height: 1.3rem ;
+    float: left;
+}
+footer .footer2{
+    font-family: 'Montaga', serif;;
+    font-size: 20px;
+    background-color:#343a40;
+    color: #686868;
+    height: 50px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 20px;
+}
+@media screen and (max-width: 1100px){
+    footer .footer1 .links{
+        margin-left: 20px;
+    }
+    nav{
+        padding: 10px;
+    }
+    .nav__links li{
+        display: inline-block;
+        padding: 10px 10px;
+    }
+    header nav ul li a button, .grid1 div button{
+        margin-left: 10px;
+        padding: 10px 10px;
+        background-color: rgb(0, 136, 169, 1);
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }
+    .logo{
+        margin-right: auto;
+    }
+    footer .footer2{
+        font-family: 'Montaga', serif;;
+        font-size: 20px;
+        background-color:#343a40;
+        color: #686868;
+        height: 30px;
+        padding-top: 0px;
+    }
+    .grid div{
+        font-size: 15px;
+    }
+    .slideshow-container{
+        max-width: 600px;
+        height: 250px;
+    }
+    .grid1{
+        height: 405px;
+    }
+    .grid1 div{
+        font-size: 12px;
+    }
+    .cl1{
+        height: 400px;
+    }
+
+}

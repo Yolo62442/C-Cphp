@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+@import url('https://fonts.googleapis.com/css?family=Montaga&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Sen&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+header nav ul li a, header nav ul li a  button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+} 
+
+header{
+    width: 100%;
+    height: 500px;
+}
+header::after {
+    content: "";
+    background-image: url("headerbg.png");
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    width: 100%;
+    height: 80%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+nav{
+    color: black;
+    background-color: white;
+    height: 70px ;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    top: 0;
+    position: fixed;
+    z-index: 1;
+    box-shadow: 10px 10px 5px grey;
+ 
+}
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.nav__links{
+    list-style: none;
+}
+.nav__links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+.nav__links li a:hover{
+    color: #0088a9;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+header nav ul li a button, .grid1 div button{
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgb(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+ button:hover{
+     background-color: rgb(0, 136, 169, 0.5);
+ }
+ .logo:hover{
+     opacity: 0.5;
+     width: 60px;
+     height: 60px;
+ }
+ .container{ 
+     margin-left: 25%;
+    text-align: center;
+    display: grid;
+    color:#000;
+    margin-top: 200px;
+    width: 50%;
+    font-size: 20px;
+    text-align: center; 
+    font-family: "Montserrat", sans-serif;
+    background-color: white;
+    z-index: 1; 
+ }
+
+ main{
+    width: 100%;
+
+ }
+ .grid{
+     display: grid;
+     grid-template-rows: 1fr;
+     grid-template-columns: 1fr 1fr;
+     width: 70%;
+     margin-left: 15%;
+     margin-right: 15%;
+     font-family: 'Sen', sans-serif;
+     padding-bottom: 50px;
+     padding-top: 50px;
+ }
+
+ main .grid div span button{
+     color: black;
+     border: 0;
+     background-color: white;
+     width: 30px;
+     height: 30px;
+     box-shadow: 5px 5px 2.5px grey;
+ }
+ main .grid div span button:hover {
+    color: orange;
+  }
+  main .grid div span div button:hover {
+    color: red;
+  }
+
+  main .grid div ul{
+      margin-left: 20px;
+  }
+  .grid img {
+      width: 500px;
+      height: 350px;
+  }
+  .grid1{
+    display: grid;
+    width: 100%;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100px;
+    margin-top: 20px;
+  }
+  main .grid div img{
+      border-radius: 10px;
+  }
+  #more {
+      display: none;
+    }
+    .bb{
+        margin-left: 20%;
+        padding: 9px 25px;
+        background-color: rgb(0, 136, 169, 1);
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+        margin-top:2px ;
+    
+     }
+ .tutorial{
+    padding-top: 50px;
+    padding-bottom: 50px;
+     background-color: thistle;
+     align-items: center;
+     text-align: center;
+ }
+ footer{
+    height: 400px;
+    background: #303036;
+    position: relative;
+}
+footer .footer1{
+    height:350px;
+    display: flex;
+    color: wheat;
+    font-family: 'Montaga', serif;
+}
+footer .footer1 .footer-section{
+    flex: 1;
+    padding: 25px;
+    background: #303036;
+}
+footer .footer1 .footer-section li, a, button{
+    color: wheat;
+}
+
+footer .footer1 .about .socials a{
+    border: 1px solid darkslategrey;
+    width: 45px;
+    height: 41px;
+    padding-top: 5px;
+    margin-right: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.3em;
+    border-radius: 5px;
+    transition: all .3s;
+}
+footer .footer1 .about .socials a:hover{
+    border: 1px solid white;
+    color: white;
+    transition: all .3s;
+}
+footer .footer1 .links{
+    margin-left: 200px;
+}
+footer .footer1 .links ul a{
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: all .3s;
+}
+footer .footer1 .links ul a:hover{
+    font-size: 1.3em;
+    margin-left: 15px;
+    color: white;
+    transition: all .3s;
+}
+footer .footer1 .contact .contact-input{
+    background-color: #272727;
+    color: #bebdbd;
+    margin-bottom: 10px;
+    line-height: 1.5rem;
+    padding: .9rem 1.4rem;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+
+} 
+footer .footer1 .contact .contact-input:focus{
+    background-color: #1a1a1a;
+}
+.btn{
+    padding: .5rem 1rem;
+    background-color: #006669;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+.btn:hover{
+    color: white !important;
+    background-color: #005255 ;
+}
+.btn-big{
+    padding: .7rem 1rem;
+    line-height: 1.3rem ;
+    float: left;
+}
+footer .footer2{
+    font-family: 'Montaga', serif;;
+    font-size: 20px;
+    background-color:#343a40;
+    color: #686868;
+    height: 50px;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 20px;
+}
+@media screen and (max-width: 1100px){
+    footer .footer1 .links{
+        margin-left: 20px;
+    }
+    nav{
+        padding: 10px;
+    }
+    .nav__links li{
+        display: inline-block;
+        padding: 10px 10px;
+    }
+    header nav ul li a button, .grid1 div button{
+        margin-left: 10px;
+        padding: 10px 10px;
+        background-color: rgb(0, 136, 169, 1);
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+    }
+    .logo{
+        margin-right: auto;
+    }
+    footer .footer2{
+        font-family: 'Montaga', serif;;
+        font-size: 20px;
+        background-color:#343a40;
+        color: #686868;
+        height: 30px;
+        padding-top: 0px;
+    }
+    .grid img{
+        margin-top: 30px;
+        width: 300px;
+        height: 180px;
+    }
+    
+}

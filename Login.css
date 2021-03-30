@@ -1,0 +1,101 @@
+.grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0px;
+    width: 500px;
+    padding-left: 50px;
+    padding-top: 150px;
+    padding-right: 10px;
+    border-radius: 5px;
+    }
+    .cl1{
+        width: 60%; 
+        float: left; 
+        background-color: darkred; 
+        height: 700px;
+        position: absolute;;
+        top: 0;
+        left: 0;
+    }
+  
+    
+    .Login {
+    background-color:darkred;
+    color: white;
+    text-align: center;
+    width: 40%;
+    border: 0px;
+    text-decoration: none;
+    width: 100%; 
+        height: 70%;
+        border-radius: 5px;
+        font-size: 17px;
+    
+    }
+    .class1 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    background-color:darkred;
+    font-size: 25px;
+    font-weight:bold;
+    grid-column: 1/4;
+    }
+    .class2 {
+    padding-left: 10px;
+    background-color:rgb(207, 98, 98);
+    padding-top: 10px;
+    }
+    .class3 {
+        padding-top: 10px;
+    background-color:rgb(207, 98, 98);
+    grid-column: 2/4;
+    padding-right: 10px;
+    }
+    .cl4{
+        width: 40%;
+        float: right;
+    }
+    .class4{
+        width: 40%;
+        height: 255px;
+        float: right;
+    }
+    
+    .input1 {
+        width: 100%; 
+        height: 70%;
+        border-radius: 5px;
+        font-size: 17px;
+    }
+    .button1{
+        height: 25px;
+        width: 70px;
+        border-radius: 5px;
+        background-color: darkred;
+    }
+    a{
+        float: right; 
+        text-decoration: none; 
+        font-size: 20px; 
+        color: darkred;
+    }
+    a:hover{
+        color:rgb(207, 98, 98) ;
+    }
+    .p{
+        font-size: 80px; 
+        color: rgb(194, 223, 247); 
+        padding-left: 70px;
+        padding-right: 70px; 
+        padding-top: 60px; 
+        padding-bottom: 40px;
+    }
+    fieldset{
+        margin-top: 100px;
+        margin-left: 20px;
+        width: 90%; 
+        border-width:2px; 
+        border-color: black;
+        }
